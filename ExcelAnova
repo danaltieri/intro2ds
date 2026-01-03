@@ -1,0 +1,9 @@
+The Anova analysis tools provide different types of variance analysis. The tool that you should use depends on the number of factors and the number of samples that you have from the populations that you want to test.
+
+Anova: Single Factor
+
+This tool performs a simple analysis of variance on data for two or more samples. The analysis provides a test of the hypothesis that each sample is drawn from the same underlying probability distribution against the alternative hypothesis that underlying probability distributions are not the same for all samples. If there are only two samples, you can use the worksheet function T.TEST. With more than two samples, there is no convenient generalization of T.TEST, and the Single Factor Anova model can be called upon instead.
+
+Anova: Two-Factor with Replication
+
+This analysis tool is useful when data can be classified along two different dimensions.
