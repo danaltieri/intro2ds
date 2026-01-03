@@ -1,0 +1,15 @@
+To load and activate the Analysis ToolPak:
+
+In Excel for Mac, in the file menu go to Tools > Excel Add-ins.
+
+In Excel for Windows:
+
+Select File, Options, and then select Add-Ins.
+
+In the Manage box, select Excel Add-ins and then select Go.
+
+In the Add-Ins box, select the Analysis ToolPak check box, and then select OK.
+
+If Analysis ToolPak is not listed in the Add-Ins available box, click Browse to locate it.
+
+If you are prompted that the Analysis ToolPak is not currently installed on your computer, select Yes to install it.
