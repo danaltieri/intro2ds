@@ -1,0 +1,143 @@
+LLO 8200 Introduction to Data Science
+Introduction
+We have entered a time in which vast amounts of data are more widely available than ever before. At the same time, a new set of tools has been developed
+to analyze this data and provide decision makers with information to help them accomplish their goals.
+Those who engage with data and interpret it for organizational leaders have taken to calling themselves data scientists, and their craft data science. 
+Other terms that have come into vogue are "Big Data," "Predictive Analytics" and "Data Mining." These can seem to be mysterious domains. 
+The point of this class is to demystify much of this endeavor for individuals who will be organizational leaders.
+
+Learning Goals
+This class is organized around the following learning goals:
+•	Understanding Data Structures and Measurement
+•	Understanding How Models Can Be Used to Make Predictions
+•	Understanding How Results of Data Analysis Are Presented
+Textbooks and Readings
+•	Gutman, A. J., & Goldmeier, J. (2021). Becoming a data head: How to think, speak, and understand data science, statistics, and machine learning. 
+John Wiley & Sons. (Available for free from Vanderbilt Libraries. This is referred to as Gutman and Goldmeier)
+•	Harvard Business Review. (2018). HBR Guide to Data Analytics Basics for Managers (HBR Guide Series). Harvard Business Review Press. 
+(Available for free from Vanderbilt Libraries. This is referred to as HBR Guide)
+•	Additional readings will be provided, as needed, in the schedule below.
+Software
+This class will use Excel along with the Data Analysis Toolpak (also called: XLMiner Analysis Toolpak). 
+You have access to these through Vanderbilt University’s Office 365 license, if you have any questions about accessing these tools please contact 
+the instructor.
+
+Assignments
+Assessment for this class is built around a data analysis project that you will undertake using your choice of one of several datasets 
+that will be provided to you or one approved in consultation with your instructor. You may work by yourself or with one to two other members of the class 
+on this assignment. There will be seven biweekly assignments, each of which will help you create one of the components of the final assignment. 
+The final assignment will consist of a five-minute presentation and a written report.
+Evaluation
+Grading for the class will be as follows:
+•	Participation (10%): There will be fourteen weekly reflections. These will be graded on a 10-point scale and will jointly count for 10% of the final grade.
+These short, written assignments are designed to point out something you found interesting, to relate the lesson to your work in your organization, 
+or to summarize “The Point” of the lesson in your own words. These should be roughly one half a page (minimum 100 words). 
+The lowest two grades from among these assignments will be dropped. *
+•	Biweekly assignments (60%): There will be seven biweekly assignments. These will be graded on a 10-point scale and will jointly count for 60% 
+of the final grade. These assignments are designed to be the building blocks of the final assignment. 
+The lowest grade from among these assignments will be dropped. *
+•	Final assignments (30%): The final assignment will be a report based on the data analysis you conducted. There will be two components:
+a 5-minute presentation to the class and a 10-page report based on the data analysis.
+o	Presentations: 33% of final assignment grade
+o	Report: 67% of final assignment grade
+++ Note on late work: Late work will be accepted for Reflections and Assignments at a penalty of – 10% per day (max 5 days). 
+Please submit assignments in a timely fashion.
+
+Peabody and Vanderbilt Policies
+Attendance
+Attendance at synchronous sessions is mandatory. An exception to this policy may only be granted if Vanderbilt University’s Equal Opportunity 
+and Access oﬀice provides a student with an accommodation that does not require attendance. Requests for such accommodations should be initiated 
+with the Equal Opportunity and Access
+Honor Code Statement
+All work submitted in this course is governed by provisions of the Vanderbilt University Honor Code, found in the student handbook. If you have 
+any doubts about how the Honor Code applies to your work in this class, please ask me for clarification. Uncertainty about application of the 
+Honor Code does not excuse a violation.
+Artificial Intelligence (AI)
+All work submitted in this course must be your own, completed in accordance with the Vanderbilt University Honor Code. You may not use generative 
+AI tools, such as ChatGPT, or receive unauthorized aid from AI software in this course and on course assignments.
+Class Accommodations
+Vanderbilt is committed to equal opportunity for students with disabilities. If you need course accommodations due to a disability, please contact 
+VU Student Access Services to initiate the process. After SAS has notified me of relevant accommodations, we will discuss how these accommodations 
+may best be approached in this class, and I will facilitate the accommodations.
+Mental Health & Wellness
+If you are experiencing undue stress that may be interfering with your ability to perform academically, Vanderbilt’s Student Care Network offers a 
+range of support services. The Office of Student Care Coordination (OSCC) is the central and first point of contact to help you navigate and connect
+to appropriate resources. You can schedule an appointment with the OSCC at https://www.vanderbilt.edu/carecoordination/ or call 615-343-WELL. 
+You can find a calendar of services at https://www.vanderbilt.edu/studentcarenetwork/satellite-services/.
+If you or someone you know needs to speak with a professional counselor immediately, the University Counseling Center offers Urgent Care Counseling. 
+Students should call the UCC at (615) 322-2571 during office hours to speak with an urgent care clinician. You can also reach an on-call counselor a
+fter hours or on the weekends by calling (615) 322- 2571 and pressing option 2 at any time. 
+You can find additional information at https://www.vanderbilt.edu//ucc/.
+
+Mandatory Reporter Obligations
+All University faculty and administrators are mandatory reporters. What this means is that all faculty and administrators must report allegations of sexual misconduct and intimate partner violence to the Title IX Coordinator. In addition, all
+ 
+faculty and administrators are obligated to report any allegations of discrimination. If you want to talk with someone in confidence, officials in the Student Health Center, the University Counseling Center, and the Office of the Chaplain and Religious Life (when acting as clergy) can maintain confidentiality. In addition, officials in the Project Safe Center have limited confidentiality, in that they must report the incidents but can do so without providing identifying information.
+The Project Safe Center serves as the central resource for those impacted by sexual misconduct and intimate partner violence and can assist with navigating all facets of the University’s resource and support network and other processes.
+Names and Pronouns
+If you would like to use a different name or pronouns than those provided through YES, please let the instructor know at any time prior to or during the semester. Information is available through the LGBTQI Life offices about how to change either or both of these in YES.
+ 
+Schedule:
+Module	Required Readings	Optional Readings	Assignments
+01	•	Gutman and Goldmeier - Ch. 1
+•	Gutman and Goldmeier - Ch. 3
+•	Stat-Spotting pg 28-72
+•	Reflection 1 – Due by next class
+02	•	Gutman and Goldmeier - Ch. 2
+	•	Reflection 2 – Due by next class
+•	Assignment 1
+03	•	Gutman and Goldmeier - Ch. 4
+•	Unobtrusive Measures Ch 1 Excerpt
+•	Shadish 1993 (pg 18-35)
+Asynchronous Supplement:
+•	Walsh, Katz & Sechrest 2002
+•	Reflection 3– Due by next class
+04	•	HBR Guide - Ch. 4 and Ch. 6
+•	Lammers & Badia Ch 08 (pg 2-18)
+•	Campbell & Fiske 1959
+•	Law, Song, & Wong 2004
+•	Reflection 4 – Due by next class
+•	Assignment 2
+05	•	Power of Survey Design - Ch 3
+	•	Reflection 5 – Due by
+next class
+06	•	Gutman and Goldmeier - Ch. 5
+•	Behrens 1997 - can skip “Putting It All Together: A Reexamination of
+the Paap and Johansen Data” p 146-
+154
+	•	Reflection 6 – Due by next class
+•	Assignment 3
+07	•	Gutman and Goldmeier - Ch. 9
+•	HBR Guide - Ch. 10
+Asynchronous Supplement:
+•	Ursu 2018
+•	Reflection 7– Due by next class
+08	•	Gutman and Goldmeier - Ch. 10
+	•	Reflection 8 – Due by next class
+•	Assignment 4
+*09	No readings	No readings	•	Reflection 9 – Due by
+next class
+*10	•	Gutman and Goldmeier - Ch. 7
+	•	Reflection 10 – Due by next class
+•	Assignment 5
+11	•	Gutman and Goldmeier - Ch. 8
+•	Ozturk et al 2022
+•	Merlino et al 2022
+•	Namin et al 2022
+•	Reflection 11 – Due by
+next class
+12	•	Gutman and Goldmeier - Ch. 12
+•	Wolfram 2023
+Asynchronous Supplement:
+•	Khan Akram Usman 2020
+•	Reflection 12 – Due by next class
+•	Assignment 6
+13	•	Gutman and Goldmeier - Ch. 13 and
+Ch. 14
+	•	Reflection 13 – Due by
+next class
+14	
+Final Presentations.	•	Final Paper – On Canvas
+•	Reflection 14 – On Canvas
+•	Assignment 7
+* Weeks 9 and 10 may be reversed, depending on the section.
