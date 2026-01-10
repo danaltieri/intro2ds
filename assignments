@@ -1,0 +1,74 @@
+Summary of Assignments from Canvas LMS 	
+Participation: Reflections – Due 1 week after each Live Class
+	Each week there is a reflection assignment to post with the following prompt: 
+“These short, written assignments are designed to point out something you found interesting, to relate the lesson to your work in your organization, or to summarize “The Point” of the lesson in your own words.”
+
+These should be roughly one half a page (minimum 100 words) and posted so that your colleagues can read and comment on your work. 
+Bi-weekly Assignments: Group Final Project Status and Updates 
+Bi-weekly Assignments are designed to help you structure and build up to your final term project.
+Each individual Assignment will be uploaded to the Canvas LMS by each student in the group for feedback and grading, yet it is expected that the group elements of the assignment will be common text shared across all members of the group outside of the explicit individual section for Assignment #3. 
+Assignments can be submitted as PDF, DOC, DOCX, or plain text entry.
+These should be no longer than a page in length (minimum 250 words).
+When you save your assignment, the file name should be "First Name_Last Name_Assignment Name.
+
+Assignment 1 – Pick Your Data and Your Team
+Select a data set and partner(s) – 
+1.	 Provide a simple description of which data set was chosen, why you chose it, and list partner(s) they will be working with.
+2.	Provide be a short discussion of what type of problem(s) your group might address with this dataset. It is perfectly fine to not know exactly what question/problem you want to address. This is brainstorming.  
+
+Assignment 2 – Problem/Question of Practice
+	Define the problem/question of practice – 
+1.	Articulate the problem/question of practice your group will be addressing, and state why the problem/question is interesting/important.
+2.	Provide at least two citations (in APA format) of academic articles related to the problem/question you are addressing. Annotations are not required, but it never hurts. 
+
+Assignment 3 – Variable Selection and Group Progress
+Group portion (80%; can be verbatim copied for each member of your group):
+Identify the variables and measures –
+1.	Using the previous assignment as a jumping off point, identify what variable are available in the dataset and how they might be used to address the problem/question. For each variable you plan to include, the TYPE and SCALE OF MEASUREMENT should be noted. Are you using any proxies? If so, which ones and what are they stand-ins for?
+2.	Identify any variables relevant to your problem/question that you believe are missing from the data set (variables that could be used to answer your question more directly/completely). Why do you think these variables add to the directness/completeness? If these data were provided from your organization, how might you get ahold of those data?
+Individual portion (20%; needs to be unique for each individual): 
+I would like you two write one or two sentences addressing each of the following:
+1.	Describe your contributions to the group project to this point. 
+2.	Describe how your group plans to handle data analysis and expansion of the literature review going forward.
+3.	Rate how well you think the group is working together as a whole up to this point (0 = not all all working well; 10 = we are completely in sync, understand our responsibilities, and are working towards an amazing end product). 
+4.	If you are working by yourself, you may simply give me a description of where you are at to this point. Have you done any analyses, etc
+Please note: This is just an attempt to get ahead of any potential group issues as we move into the more statistical assignments. Your responses here should accurately reflect your perception of group dynamics. rating your group's cohesion poorly will not impact your grade on this assignment. 
+
+Assignment 4 – Explore a Variable
+Exploration (univariate) – 
+Now that variables have been identified, exploration of those variables should be reported. This should include the appropriate:
+1.	Univariate plots (this means one variable) for each variable
+•	Discussion of the shapes of the distributions
+•	Identification of potential outliers
+•	Noting the degree of “missingness”
+2.	Numerical summary statistics
+3.	What effect anything you found might have on any more complicated statistics/models (e.g. outliers that might bias means)?
+
+Assignment 5 – Multiple Variable Exploration
+Exploration (bivariate+) – 
+Essentially the same as the last assignment, but now with two or more variables. This could include:
+1.	Scatterplots
+2.	Multidimensional barcharts
+3.	Correlation tables
+4.	Crosstabs
+5.	Anything else you feel is relevant (but not linear or logistic regression yet)
+This exploration serves to identify what variables should/should not be included in the next step. No linear or logistic regression quite yet!
+
+Assignment 6 – Modeling and Explaining Relationships Between Variables
+	It's modeling time –
+Using multiple linear regression or multiple logistic regression (or something else discussed with instructor previously), model the relations between the Outcome/s(DV/s) and the Predictors(IVs). This will likely include multiple models that will be compared in order to assess the balance between parsimony and predictive power (likely using adjusted R-squared for linear regression and/or AIC for logistic regression). 
+Explain how you chose the "final" model you did.
+
+Assignment 7 – Communicate Success
+	Communication is key - 
+Briefly, explain what you did and how it relates back to your problem. 
+ This needs to be scaled/tailored to the audience that you would present these findings to.
+•	If the problem is a statistically technical one, then you would likely present to a quantitatively sophisticated audience. 
+•	If, however, the problem is more of a “boots on the ground” problem, then you may need to scale back on the quantitative focus and instead lean into the “TLDR version”.
+Final Assignments – Term Group Project
+The term-long group project is designed to allow you to apply Data Science in a real-world style. Being able to execute the work in a group is a key element for doing Data Science work. Projects with multiple participants are the norm for the application and execution of Data Science in organizations, with very rare exception for individual academic research, which still would involve other constituents. Pick a problem that is interesting to consider where there is easily available data. Some datasets and suggestions can be found in Canvas here: https://digitalcampus.instructure.com/courses/55182/pages/datasets-for-final-project?module_item_id=8829632 
+Final Presentations & Live Class Discussion
+The presentation for your group work will be a 10-minute presentation that you record as a team and share before our week 13 class. Each team should then be prepared to discuss the presentations from the other teams and defend the analysis of their own work during our final class in week 14. 
+Final Report
+The expectations for the final report are found here: https://digitalcampus.instructure.com/courses/55182/files/8132129?module_item_id=8829613 and should be followed closely. 
+
