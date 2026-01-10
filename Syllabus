@@ -1,74 +1,45 @@
 LLO 8200 Introduction to Data Science
+Instructor Details & Office Hours
+	Daniel Altieri, EdD Vanderbilt LLO Class of 2022 – https://www.linkedin.com/in/thepassionatetechnologist 
+	Contact information: daniel.b.altieri@vanderbilt.edu  
+	Office Hours: 1 hr post live class or by mutually agreed appointment and meeting invitation. 
 Introduction
-We have entered a time in which vast amounts of data are more widely available than ever before. At the same time, a new set of tools has been developed
-to analyze this data and provide decision makers with information to help them accomplish their goals.
-Those who engage with data and interpret it for organizational leaders have taken to calling themselves data scientists, and their craft data science. 
-Other terms that have come into vogue are "Big Data," "Predictive Analytics" and "Data Mining." These can seem to be mysterious domains. 
-The point of this class is to demystify much of this endeavor for individuals who will be organizational leaders.
-
-Learning Goals
+We have entered a time in which vast amounts of data are more widely available than ever before. At the same time, a new set of tools has been developed to analyze this data and provide decision makers with information to help them accomplish their goals. Those who engage with data and interpret it for organizational leaders have taken to calling themselves data scientists, and their craft data science. Other terms that have come into vogue are "Big Data," "Predictive Analytics" and "Data Mining." These can seem to be mysterious domains. The point of this class is to demystify much of this endeavor for individuals who will be organizational leaders.
+Learning goals
 This class is organized around the following learning goals:
 •	Understanding Data Structures and Measurement
 •	Understanding How Models Can Be Used to Make Predictions
 •	Understanding How Results of Data Analysis Are Presented
+•	Understanding How Data Science Powers AI Prediction to Deepen AI Literacy
 Textbooks and Readings
-•	Gutman, A. J., & Goldmeier, J. (2021). Becoming a data head: How to think, speak, and understand data science, statistics, and machine learning. 
-John Wiley & Sons. (Available for free from Vanderbilt Libraries. This is referred to as Gutman and Goldmeier)
-•	Harvard Business Review. (2018). HBR Guide to Data Analytics Basics for Managers (HBR Guide Series). Harvard Business Review Press. 
-(Available for free from Vanderbilt Libraries. This is referred to as HBR Guide)
+•	Gutman, A. J., & Goldmeier, J. (2021). Becoming a data head: How to think, speak, and understand data science, statistics, and machine learning. John Wiley & Sons. (Available for free from Vanderbilt Libraries. This is referred to as Gutman and Goldmeier)
+•	Harvard Business Review. (2018). HBR Guide to Data Analytics Basics for Managers (HBR Guide Series). Harvard Business Review Press. (Available for free from Vanderbilt Libraries. This is referred to as HBR Guide)
 •	Additional readings will be provided, as needed, in the schedule below.
 Software
-This class will use Excel along with the Data Analysis Toolpak (also called: XLMiner Analysis Toolpak). 
-You have access to these through Vanderbilt University’s Office 365 license, if you have any questions about accessing these tools please contact 
-the instructor.
-
+This class will use Excel along with the Data Analysis Toolpak (also called: XLMiner Analysis Toolpak). You have access to these through Vanderbilt University’s Office 365 license, if you have any questions about accessing these tools please contact the instructor.
 Assignments
-Assessment for this class is built around a data analysis project that you will undertake using your choice of one of several datasets 
-that will be provided to you or one approved in consultation with your instructor. You may work by yourself or with one to two other members of the class 
-on this assignment. There will be seven biweekly assignments, each of which will help you create one of the components of the final assignment. 
-The final assignment will consist of a five-minute presentation and a written report.
+Assessment for this class is built around a data analysis project that you will undertake using your choice of one of several datasets that will be provided to you or one approved in consultation with your instructor. You may work by yourself or with one to two other members of the class on this assignment. There will be seven biweekly assignments, each of which will help you create one of the components of the final assignment. The final assignment will consist of a five-minute presentation and a written report.
 Evaluation
 Grading for the class will be as follows:
-•	Participation (10%): There will be fourteen weekly reflections. These will be graded on a 10-point scale and will jointly count for 10% of the final grade.
-These short, written assignments are designed to point out something you found interesting, to relate the lesson to your work in your organization, 
-or to summarize “The Point” of the lesson in your own words. These should be roughly one half a page (minimum 100 words). 
-The lowest two grades from among these assignments will be dropped. *
-•	Biweekly assignments (60%): There will be seven biweekly assignments. These will be graded on a 10-point scale and will jointly count for 60% 
-of the final grade. These assignments are designed to be the building blocks of the final assignment. 
-The lowest grade from among these assignments will be dropped. *
-•	Final assignments (30%): The final assignment will be a report based on the data analysis you conducted. There will be two components:
-a 5-minute presentation to the class and a 10-page report based on the data analysis.
+•	Participation (10%): There will be fourteen weekly reflections. These will be graded on a 10-point scale and will jointly count for 10% of the final grade. These short, written assignments are designed to point out something you found interesting, to relate the lesson to your work in your organization, or to summarize “The Point” of the lesson in your own words. These should be roughly one half a page (minimum 100 words). The lowest two grades from among these assignments will be dropped. *
+ 
+•	Biweekly assignments (60%): There will be seven biweekly assignments. These will be graded on a 10-point scale and will jointly count for 60% of the final grade. These assignments are designed to be the building blocks of the final assignment. The lowest grade from among these assignments will be dropped. *
+•	Final assignments (30%): The final assignment will be a report based on the data analysis you conducted. There will be two components: a 5-minute presentation to the class and a 10-page report based on the data analysis.
 o	Presentations: 33% of final assignment grade
 o	Report: 67% of final assignment grade
-++ Note on late work: Late work will be accepted for Reflections and Assignments at a penalty of – 10% per day (max 5 days). 
-Please submit assignments in a timely fashion.
-
+++ Note on late work: Late work will be accepted for Reflections and Assignments at a penalty of – 10% per day (max 5 days). Please submit assignments in a timely fashion.
 Peabody and Vanderbilt Policies
 Attendance
-Attendance at synchronous sessions is mandatory. An exception to this policy may only be granted if Vanderbilt University’s Equal Opportunity 
-and Access oﬀice provides a student with an accommodation that does not require attendance. Requests for such accommodations should be initiated 
-with the Equal Opportunity and Access
+Attendance at synchronous sessions is mandatory. An exception to this policy may only be granted if Vanderbilt University’s Equal Opportunity and Access oﬀice provides a student with an accommodation that does not require attendance. Requests for such accommodations should be initiated with the Equal Opportunity and Access
 Honor Code Statement
-All work submitted in this course is governed by provisions of the Vanderbilt University Honor Code, found in the student handbook. If you have 
-any doubts about how the Honor Code applies to your work in this class, please ask me for clarification. Uncertainty about application of the 
-Honor Code does not excuse a violation.
+All work submitted in this course is governed by provisions of the Vanderbilt University Honor Code, found in the student handbook. If you have any doubts about how the Honor Code applies to your work in this class, please ask me for clarification. Uncertainty about application of the Honor Code does not excuse a violation.
 Artificial Intelligence (AI)
-All work submitted in this course must be your own, completed in accordance with the Vanderbilt University Honor Code. You may not use generative 
-AI tools, such as ChatGPT, or receive unauthorized aid from AI software in this course and on course assignments.
+All work submitted in this course must be your own, completed in accordance with the Vanderbilt University Honor Code. You may not use generative AI tools, such as ChatGPT, or receive unauthorized aid from AI software in this course and on course assignments. The authorizes use of AI policy is shared here for this course section: https://digitalcampus.instructure.com/courses/55182/files/8456637?module_item_id=9352528 
 Class Accommodations
-Vanderbilt is committed to equal opportunity for students with disabilities. If you need course accommodations due to a disability, please contact 
-VU Student Access Services to initiate the process. After SAS has notified me of relevant accommodations, we will discuss how these accommodations 
-may best be approached in this class, and I will facilitate the accommodations.
+Vanderbilt is committed to equal opportunity for students with disabilities. If you need course accommodations due to a disability, please contact VU Student Access Services to initiate the process. After SAS has notified me of relevant accommodations, we will discuss how these accommodations may best be approached in this class, and I will facilitate the accommodations.
 Mental Health & Wellness
-If you are experiencing undue stress that may be interfering with your ability to perform academically, Vanderbilt’s Student Care Network offers a 
-range of support services. The Office of Student Care Coordination (OSCC) is the central and first point of contact to help you navigate and connect
-to appropriate resources. You can schedule an appointment with the OSCC at https://www.vanderbilt.edu/carecoordination/ or call 615-343-WELL. 
-You can find a calendar of services at https://www.vanderbilt.edu/studentcarenetwork/satellite-services/.
-If you or someone you know needs to speak with a professional counselor immediately, the University Counseling Center offers Urgent Care Counseling. 
-Students should call the UCC at (615) 322-2571 during office hours to speak with an urgent care clinician. You can also reach an on-call counselor a
-fter hours or on the weekends by calling (615) 322- 2571 and pressing option 2 at any time. 
-You can find additional information at https://www.vanderbilt.edu//ucc/.
-
+If you are experiencing undue stress that may be interfering with your ability to perform academically, Vanderbilt’s Student Care Network offers a range of support services. The Office of Student Care Coordination (OSCC) is the central and first point of contact to help you navigate and connect to appropriate resources. You can schedule an appointment with the OSCC at https://www.vanderbilt.edu/carecoordination/ or call 615-343-WELL. You can find a calendar of services at https://www.vanderbilt.edu/studentcarenetwork/satellite-services/.
+If you or someone you know needs to speak with a professional counselor immediately, the University Counseling Center offers Urgent Care Counseling. Students should call the UCC at (615) 322-2571 during office hours to speak with an urgent care clinician. You can also reach an on-call counselor after hours or on the weekends by calling (615) 322- 2571 and pressing option 2 at any time. You can find additional information at https://www.vanderbilt.edu//ucc/.
 Mandatory Reporter Obligations
 All University faculty and administrators are mandatory reporters. What this means is that all faculty and administrators must report allegations of sexual misconduct and intimate partner violence to the Title IX Coordinator. In addition, all
  
@@ -77,67 +48,156 @@ The Project Safe Center serves as the central resource for those impacted by sex
 Names and Pronouns
 If you would like to use a different name or pronouns than those provided through YES, please let the instructor know at any time prior to or during the semester. Information is available through the LGBTQI Life offices about how to change either or both of these in YES.
  
-Schedule:
+Schedule
 Module	Required Readings	Optional Readings	Assignments
-01	•	Gutman and Goldmeier - Ch. 1
+01
+Jan 6	•	Gutman and Goldmeier - Ch. 1
 •	Gutman and Goldmeier - Ch. 3
 •	Stat-Spotting pg 28-72
 •	Reflection 1 – Due by next class
-02	•	Gutman and Goldmeier - Ch. 2
+02
+Jan 13	•	Gutman and Goldmeier - Ch. 2
 	•	Reflection 2 – Due by next class
-•	Assignment 1
-03	•	Gutman and Goldmeier - Ch. 4
+•	Assignment 1 – Due Jan 13
+03
+Jan 20	•	Gutman and Goldmeier - Ch. 4
 •	Unobtrusive Measures Ch 1 Excerpt
 •	Shadish 1993 (pg 18-35)
 Asynchronous Supplement:
 •	Walsh, Katz & Sechrest 2002
 •	Reflection 3– Due by next class
-04	•	HBR Guide - Ch. 4 and Ch. 6
+04
+Jan 27	•	HBR Guide - Ch. 4 and Ch. 6
 •	Lammers & Badia Ch 08 (pg 2-18)
 •	Campbell & Fiske 1959
 •	Law, Song, & Wong 2004
 •	Reflection 4 – Due by next class
-•	Assignment 2
-05	•	Power of Survey Design - Ch 3
+•	Assignment 2 – Due Jan 27
+05
+Feb 3	•	Power of Survey Design - Ch 3
 	•	Reflection 5 – Due by
 next class
-06	•	Gutman and Goldmeier - Ch. 5
+06
+Feb 10	•	Gutman and Goldmeier - Ch. 5
 •	Behrens 1997 - can skip “Putting It All Together: A Reexamination of
 the Paap and Johansen Data” p 146-
 154
 	•	Reflection 6 – Due by next class
-•	Assignment 3
-07	•	Gutman and Goldmeier - Ch. 9
+•	Assignment 3–Due Feb 10
+07
+Feb 17	•	Gutman and Goldmeier - Ch. 9
 •	HBR Guide - Ch. 10
 Asynchronous Supplement:
 •	Ursu 2018
 •	Reflection 7– Due by next class
-08	•	Gutman and Goldmeier - Ch. 10
+08
+Feb 24	•	Gutman and Goldmeier - Ch. 10
 	•	Reflection 8 – Due by next class
-•	Assignment 4
-*09	No readings	No readings	•	Reflection 9 – Due by
+•	Assignment 4 – Due Feb 24
+*09
+Mar 3	No readings	No readings	•	Reflection 9 – Due by
 next class
-*10	•	Gutman and Goldmeier - Ch. 7
+*10
+Mar 10	•	Gutman and Goldmeier - Ch. 7
 	•	Reflection 10 – Due by next class
-•	Assignment 5
-11	•	Gutman and Goldmeier - Ch. 8
+•	Assignment 5 – Due Mar 10
+11
+Mar 17	•	Gutman and Goldmeier - Ch. 8
 •	Ozturk et al 2022
 •	Merlino et al 2022
 •	Namin et al 2022
 •	Reflection 11 – Due by
 next class
-12	•	Gutman and Goldmeier - Ch. 12
+12
+Mar 24	•	Gutman and Goldmeier - Ch. 12
 •	Wolfram 2023
 Asynchronous Supplement:
 •	Khan Akram Usman 2020
 •	Reflection 12 – Due by next class
-•	Assignment 6
-13	•	Gutman and Goldmeier - Ch. 13 and
+•	Assignment 6 – Due Mar 24
+13
+Mar 31	•	Gutman and Goldmeier - Ch. 13 and
 Ch. 14
 	•	Reflection 13 – Due by
 next class
-14	
-Final Presentations.	•	Final Paper – On Canvas
+•	Final Presentation Recording Upload? – Due by Mar 31
+14
+Apr 7	
+Discuss Final Presentations.	•	Final Paper – On Canvas
 •	Reflection 14 – On Canvas
-•	Assignment 7
+•	Assignment 7 – Due Apr 7
 * Weeks 9 and 10 may be reversed, depending on the section.
+Summary of Assignments from Canvas LMS 	
+Participation: Reflections – Due 1 week after each Live Class
+	Each week there is a reflection assignment to post with the following prompt: 
+“These short, written assignments are designed to point out something you found interesting, to relate the lesson to your work in your organization, or to summarize “The Point” of the lesson in your own words.”
+
+These should be roughly one half a page (minimum 100 words) and posted so that your colleagues can read and comment on your work. 
+Bi-weekly Assignments: Group Final Project Status and Updates 
+Bi-weekly Assignments are designed to help you structure and build up to your final term project.
+Each individual Assignment will be uploaded to the Canvas LMS by each student in the group for feedback and grading, yet it is expected that the group elements of the assignment will be common text shared across all members of the group outside of the explicit individual section for Assignment #3. 
+Assignments can be submitted as PDF, DOC, DOCX, or plain text entry.
+These should be no longer than a page in length (minimum 250 words).
+When you save your assignment, the file name should be "First Name_Last Name_Assignment Name.
+
+Assignment 1 – Pick Your Data and Your Team
+Select a data set and partner(s) – 
+1.	 Provide a simple description of which data set was chosen, why you chose it, and list partner(s) they will be working with.
+2.	Provide be a short discussion of what type of problem(s) your group might address with this dataset. It is perfectly fine to not know exactly what question/problem you want to address. This is brainstorming.  
+
+Assignment 2 – Problem/Question of Practice
+	Define the problem/question of practice – 
+1.	Articulate the problem/question of practice your group will be addressing, and state why the problem/question is interesting/important.
+2.	Provide at least two citations (in APA format) of academic articles related to the problem/question you are addressing. Annotations are not required, but it never hurts. 
+
+Assignment 3 – Variable Selection and Group Progress
+Group portion (80%; can be verbatim copied for each member of your group):
+Identify the variables and measures –
+1.	Using the previous assignment as a jumping off point, identify what variable are available in the dataset and how they might be used to address the problem/question. For each variable you plan to include, the TYPE and SCALE OF MEASUREMENT should be noted. Are you using any proxies? If so, which ones and what are they stand-ins for?
+2.	Identify any variables relevant to your problem/question that you believe are missing from the data set (variables that could be used to answer your question more directly/completely). Why do you think these variables add to the directness/completeness? If these data were provided from your organization, how might you get ahold of those data?
+Individual portion (20%; needs to be unique for each individual): 
+I would like you two write one or two sentences addressing each of the following:
+1.	Describe your contributions to the group project to this point. 
+2.	Describe how your group plans to handle data analysis and expansion of the literature review going forward.
+3.	Rate how well you think the group is working together as a whole up to this point (0 = not all all working well; 10 = we are completely in sync, understand our responsibilities, and are working towards an amazing end product). 
+4.	If you are working by yourself, you may simply give me a description of where you are at to this point. Have you done any analyses, etc
+Please note: This is just an attempt to get ahead of any potential group issues as we move into the more statistical assignments. Your responses here should accurately reflect your perception of group dynamics. rating your group's cohesion poorly will not impact your grade on this assignment. 
+
+Assignment 4 – Explore a Variable
+Exploration (univariate) – 
+Now that variables have been identified, exploration of those variables should be reported. This should include the appropriate:
+1.	Univariate plots (this means one variable) for each variable
+•	Discussion of the shapes of the distributions
+•	Identification of potential outliers
+•	Noting the degree of “missingness”
+2.	Numerical summary statistics
+3.	What effect anything you found might have on any more complicated statistics/models (e.g. outliers that might bias means)?
+
+Assignment 5 – Multiple Variable Exploration
+Exploration (bivariate+) – 
+Essentially the same as the last assignment, but now with two or more variables. This could include:
+1.	Scatterplots
+2.	Multidimensional barcharts
+3.	Correlation tables
+4.	Crosstabs
+5.	Anything else you feel is relevant (but not linear or logistic regression yet)
+This exploration serves to identify what variables should/should not be included in the next step. No linear or logistic regression quite yet!
+
+Assignment 6 – Modeling and Explaining Relationships Between Variables
+	It's modeling time –
+Using multiple linear regression or multiple logistic regression (or something else discussed with instructor previously), model the relations between the Outcome/s(DV/s) and the Predictors(IVs). This will likely include multiple models that will be compared in order to assess the balance between parsimony and predictive power (likely using adjusted R-squared for linear regression and/or AIC for logistic regression). 
+Explain how you chose the "final" model you did.
+
+Assignment 7 – Communicate Success
+	Communication is key - 
+Briefly, explain what you did and how it relates back to your problem. 
+ This needs to be scaled/tailored to the audience that you would present these findings to.
+•	If the problem is a statistically technical one, then you would likely present to a quantitatively sophisticated audience. 
+•	If, however, the problem is more of a “boots on the ground” problem, then you may need to scale back on the quantitative focus and instead lean into the “TLDR version”.
+Final Assignments – Term Group Project
+The term-long group project is designed to allow you to apply Data Science in a real-world style. Being able to execute the work in a group is a key element for doing Data Science work. Projects with multiple participants are the norm for the application and execution of Data Science in organizations, with very rare exception for individual academic research, which still would involve other constituents. Pick a problem that is interesting to consider where there is easily available data. Some datasets and suggestions can be found in Canvas here: https://digitalcampus.instructure.com/courses/55182/pages/datasets-for-final-project?module_item_id=8829632 
+Final Presentations & Live Class Discussion
+The presentation for your group work will be a 10-minute presentation that you record as a team and share before our week 13 class. Each team should then be prepared to discuss the presentations from the other teams and defend the analysis of their own work during our final class in week 14. 
+Final Report
+The expectations for the final report are found here: https://digitalcampus.instructure.com/courses/55182/files/8132129?module_item_id=8829613 and should be followed closely. 
+
