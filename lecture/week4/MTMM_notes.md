@@ -1,5 +1,5 @@
 ---
-title: "Construct Validation Through the MTMM Lens"
+title: "Construct Validation Through the Multitrait–Multimethod Matrix(MTMM) Lens"
 subtitle: "A Narrative Based on Campbell & Fiske (1959)"
 author: "Prepared for teaching and reference use"
 date: "2026-01-27"
