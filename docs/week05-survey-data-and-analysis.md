@@ -13,10 +13,12 @@ toc: true
 
 **See also:** Week 2
 
-## 1. What Is Survey Data?
+## 1. What Is Survey Data? {#what-is-survey-data}
+
 Survey data is collected by asking people questions and recording their responses. It allows systematic information gathering about behaviors, attitudes, and demographics—especially when direct observation is impractical.
 
-## 2. Sampling in Survey Research
+## 2. Sampling in Survey Research {#sampling}
+
 ### 2.1 Samples vs. Populations
 We survey a **sample** (subset) to draw inferences about a **population**.
 
@@ -26,39 +28,45 @@ A probability sample has known selection probabilities, enabling generalization 
 ### 2.3 Survey Weights
 When selection probabilities differ, **weights** adjust estimates so each respondent represents the correct number of people. Large surveys (e.g., **GSS**) rely on weights.
 
-## 3. The General Social Survey (GSS)
+## 3. The General Social Survey (GSS) {#gss}
+
 - Long‑running national survey of U.S. adults, with consistent methods across decades.
 - Collects education, health behaviors, social attitudes, etc.
 - **Codebooks** document variable construction, skip patterns, and response options; always consult them.
 
-## 4. Types of Survey Questions
+## 4. Types of Survey Questions {#question-types}
+
 - **Open‑Ended**: nuanced but hard to quantify.
 - **Closed‑Ended / Multiple Choice**: standardized and efficient for quantitative analysis.
 - Other formats: ranking, forced‑choice, sliders—use with care.
 
-## 5. Categories of Survey Variables
+## 5. Categories of Survey Variables {#variable-categories}
+
 - **Demographic** (often IVs): stable characteristics (e.g., education, age).
 - **Behavioral**: actions within time windows (e.g., doctor visits, voting).
 - **Attitudinal**: beliefs, opinions, values; distinct from behavior.
 
-## 6. Question Design Principles
+## 6. Question Design Principles {#question-design}
+
 - Keep questions concise and focused.
 - Avoid leading/loaded wording; use clear language.
 - Provide complete, mutually exclusive options.
 - Do not mix behaviors and attitudes in one question.
 
-## 7. Structure of Survey Data Files
+## 7. Structure of Survey Data Files {#data-structure}
+
 - Rectangular datasets: rows = respondents; columns = variables.
 - Numeric codes may label categories; do **not** treat as quantities unless appropriate.
 
-## 8. Crosstabulation (Core Analysis Tool)
+## 8. Crosstabulation (Core Analysis Tool) {#crosstabulation}
+
 **What**: Compare two categorical variables to reveal association.
 
 **Best practice**
 - Place **independent variable on rows**; **dependent on columns**.
 - Use **row percentages** to compare groups.
 
-## FAQ
+## FAQ {#faq}
 
 **Q: When must I apply survey weights?**  
 **A:** When selection probabilities differ (most complex/national surveys). Weights restore population representativeness.

@@ -11,7 +11,11 @@ toc: true
 
 > **TL;DR**: Classify variables first (categorical vs. numeric; nominal/ordinal/interval/ratio). Match methods to types: 2-group mean → **t‑test**; ≥3 groups → **ANOVA**; two numeric variables → **correlation/regression**; binary DV → **logistic**; two categoricals → **chi‑square**. Always check assumptions and report uncertainty (e.g., **95% CI**).
 
-**See also:** [Week  · [MTMM](./mtmm-construct-validation.md variable must exhibit variation across cases. Classify variables first by type—**Qualitative (Categorical)** vs. **Quantitative (Numeric)**—and then by **scale of measurement**: Nominal, Ordinal, Interval, or Ratio. This classification guides appropriate statistical procedures.
+**See also:** [Week 1](./week01-intro-to-ds.md) · [MTMM](./mtmm-construct-validation.md) · [Reliability vs. Validity](./reliability-vs-validity.md)
+
+## 1. Variables, Scales, and Measurement {#variables-scales-measurement}
+
+For any statistical method to work, a variable must exhibit variation across cases. Classify variables first by type—**Qualitative (Categorical)** vs. **Quantitative (Numeric)**—and then by **scale of measurement**: Nominal, Ordinal, Interval, or Ratio. This classification guides appropriate statistical procedures.
 
 - **Examples**:
   - Number of votes → Quantitative, Ratio (meaningful zero).
@@ -20,29 +24,31 @@ toc: true
   - Women’s jeans sizes → Qualitative, Ordinal (labels; inconsistent numeric steps).
   - Language proficiency → Depends on instrument (numeric test score vs. categorical level).
 
-## 2. Summary Statistics
+## 2. Summary Statistics {#summary-statistics}
+
 **Key measures (plain text)**
-- Mean (arithmetic average): \(\\bar{x} = \\frac{1}{n} \\sum x_i\)
-- Median: middle value when ordered; for even \(n\), \(\text{median} = \\frac{x_{n/2} + x_{n/2+1}}{2}\)
-- Sample variance: \(s^2 = \\sum (x_i - \\bar{x})^2 / (n - 1)\)
-- Sample standard deviation: \(s = \\sqrt{s^2}\)
-- Population variance: \(\\sigma^2 = \\sum (x_i - \\mu)^2 / n\)
-- Skewness (Fisher–Pearson): \(g_1 = m_3 / s^3\), where \(m_3 = \\text{mean}((x - \\bar{x})^3)\)
-- Excess kurtosis (Fisher): \(g_2 = m_4 / s^4 - 3\), where \(m_4 = \\text{mean}((x - \\bar{x})^4)\)
+- Mean (arithmetic average): x-bar = (sum of all x-values) / n
+- Median: middle value when ordered; for even n, median = average of the two middle values
+- Sample variance: s² = sum of squared deviations from mean / (n - 1)
+- Sample standard deviation: s = square root of sample variance
+- Population variance: σ² = sum of squared deviations from population mean / n
+- Skewness (Fisher–Pearson): g₁ = third moment / s³, where third moment = mean of cubed deviations
+- Excess kurtosis (Fisher): g₂ = fourth moment / s⁴ - 3, where fourth moment = mean of fourth-power deviations
 
 **Worked Example** (n = 200)
-- Sample mean (\(\\bar{x\)) = 52.144
+- Sample mean (x-bar) = 52.144
 - Sample median = 51.411
-- Sample variance (\(s^2\)) = 145.968
-- Sample std. dev. (\(s\)) = 12.082
-- Skewness (\(g_1\)) ≈ 0.827
-- Excess kurtosis (\(g_2\)) ≈ 1.340
+- Sample variance (s²) = 145.968
+- Sample std. dev. (s) = 12.082
+- Skewness (g₁) ≈ 0.827
+- Excess kurtosis (g₂) ≈ 1.340
 
 **95% Confidence Interval for the mean (normal approximation)**
-- \(\text{CI} = \\bar{x} \\pm z_{0.975} \\cdot SE(\\bar{x})\), where \(SE(\\bar{x}) = s/\\sqrt{n}\), \(z_{0.975} = 1.96\)
+- CI = x-bar ± z₀.₉₇₅ × SE(x-bar), where SE(x-bar) = s / sqrt(n), z₀.₉₇₅ = 1.96
 - Result: **[50.470, 53.819]**
 
-## 3. Inferential Statistics & Decision Rules
+## 3. Inferential Statistics & Decision Rules {#inferential-statistics}
+
 Summary vs. inference: Summary statistics describe a sample; inferential methods test hypotheses and estimate parameters to generalize to populations.
 
 **Hypothesis Testing Framework**
@@ -62,11 +68,12 @@ Summary vs. inference: Summary statistics describe a sample; inferential methods
 - Classification → DV quantitative, IV categorical (2 levels) ⇒ independent-samples t-test.
 - Decision rule (α = 0.05): reject H0 if t > t_crit or p-value ≤ 0.05.
 
-## 4. Practical Guidance
+## 4. Practical Guidance {#practical-guidance}
+
 - Focus on conceptual correctness: choose procedures that match variable type and scale.
 - Checklist: confirm variables, identify scales, specify DV/IV, choose test via decision rules, inspect assumptions (normality, homoscedasticity, independence).
 
-## FAQ
+## FAQ {#faq}
 
 **Q: Are Likert scales ordinal or interval?**  
 **A:** Strictly **ordinal** (ordered categories). Many analyses treat aggregated multi‑item Likert scales as approximately **interval**; justify and check robustness.
