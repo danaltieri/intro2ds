@@ -13,7 +13,8 @@ toc: true
 
 **See also:** Week 2 · Reliability vs. Validity
 
-## Executive Summary
+## Executive Summary {#executive-summary}
+
 Data science is central to modern decision-making, with organizations using analytics to drive success.
 
 - **Netflix**: Leveraged data to transform its business model and achieve massive growth.
@@ -35,7 +36,7 @@ Data science is central to modern decision-making, with organizations using anal
 - **Predictive Modeling**: Forecasts outcomes based on variable relationships.
 - **Goal**: Generate actionable insights for decision-making.
 
-## Lecture 1: Introduction to Data Science
+## Lecture 1: Introduction to Data Science {#lecture-1}
 - Netflix’s transformation through analytics: From DVD mail service → Streaming giant.
 - Predictive analytics for engagement and membership retention.
 - Engineering predictions for server load and content delivery.
@@ -44,7 +45,8 @@ Data science is central to modern decision-making, with organizations using anal
 - Zillow’s failure: Predictive models didn’t account for unprecedented construction cost increases → Huge losses.
 - **Core Idea**: Prediction is hard—especially about the future. Models fail when assumptions break.
 
-## Lecture 2: Course Overview
+## Lecture 2: Course Overview {#lecture-2}
+
 **Course Design and Focus**
 - Emphasis on decision-making over technical skills.
 - Students learn: Data structures and measurement; Modeling and prediction; Effective presentation of analysis.
@@ -66,19 +68,21 @@ Data science is central to modern decision-making, with organizations using anal
 - Bi-weekly assignments + final project using Excel (or other tools).
 - Focus: Applying concepts to organizational decision-making.
 
-## Lecture 3: Key Problems in Data Science Projects
+## Lecture 3: Key Problems in Data Science Projects {#lecture-3}
+
 - **Defining Important Problems**: Start with why the problem matters and who it affects. Avoid methodology-driven projects or competitive mimicry.
 - **Pitfalls in Data Collection and Measurement**: Sampling only on successful outcomes; lack of variation; assuming causality; misalignment between concepts and measurements.
 - **Project Completion and User Focus**: Define success upfront; avoid proving pet hypotheses; link analysis results to specific decisions.
 - **Trust and Engagement with Data**: Engage users early; design for decision-makers.
 
-## Lecture 4: Thinking Statistically
+## Lecture 4: Thinking Statistically {#lecture-4}
+
 - **Asking the Right Questions**: Where does the data come from? Universe vs. convenience vs. random sample.
 - **Purpose of Data Analysis**: Describe, infer, predict.
 - **Central Tendency and Variation**: Consider dispersion alongside averages (e.g., income distribution vs. mean).
 - **Probability, Inference, and Prediction**: How wrong might the model be?
 
-## FAQ
+## FAQ {#faq}
 
 **Q: Why did Zillow’s model fail if it used lots of data?**  
 **A:** Large, sudden shifts in construction and market dynamics broke key assumptions; the training signal no longer matched reality. Models are only as strong as their **assumptions and data-generating process**.

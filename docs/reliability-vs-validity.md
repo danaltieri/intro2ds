@@ -11,11 +11,12 @@ toc: true
 
 > **TL;DR**: **Reliability = consistency**; **Validity = truth** of the construct. You need both. Reliability is a threshold question (“close enough to be stable?”). Validity asks whether the instrument measures **what it should**. Evidence spans internal/external validity, face/content, and criterion (predictive/convergent/discriminant).
 
-**See also:** MTMM
+**See also:** [MTMM](./mtmm-construct-validation.md)
 
 This lecture introduces two foundational concepts in research methodology: **reliability** and **validity**. Reliability concerns **consistency**, whereas validity concerns **truth**—whether a measure actually captures what it claims to measure.
 
-## Reliability vs. Validity: Core Distinction
+## Reliability vs. Validity: Core Distinction {#core-distinction}
+
 **What Is Reliability?** Degree of consistency or repeatability in measurement (over time, across raters, across equivalent forms).
 
 **What Is Validity?** Degree to which a measure reflects the truth—does it capture the intended construct?
@@ -28,7 +29,8 @@ This lecture introduces two foundational concepts in research methodology: **rel
 
 **Why They Matter**: Without reliability, results are unstable. Without validity, results may be consistently wrong.
 
-## Types of Reliability
+## Types of Reliability {#types-of-reliability}
+
 ### Inter‑Rater (Inter‑Observer) Reliability
 - Agreement between multiple raters or observers.
 - **Categorical**: % agreement. **Continuous**: correlation between raters.
@@ -47,7 +49,8 @@ This lecture introduces two foundational concepts in research methodology: **rel
 ## From Reliability to Validity
 Reliability is a **threshold** question (“close enough?”). Validity asks the harder question: Are we measuring what we think we’re measuring?
 
-## Types of Validity
+## Types of Validity {#types-of-validity}
+
 ### Inference‑Based Validity
 - **Internal validity**: Do design and controls justify conclusions?
 - **External validity**: Do findings generalize beyond the sample/setting?
@@ -59,10 +62,11 @@ Reliability is a **threshold** question (“close enough?”). Validity asks the
 **Interpreting Criterion Validity**
 - Relies on correlations; no absolute thresholds for “high enough” convergence or “low enough” discrimination. Judgment is required.
 
-## Conclusion
+## Conclusion {#conclusion}
+
 Reliability focuses on **consistency** and often has concrete metrics. Validity addresses the deeper question of **meaning and truth** in measurement.
 
-## FAQ
+## FAQ {#faq}
 
 **Q: Can I have validity without reliability?**  
 **A:** No. Unreliable measures can’t be valid—they don’t consistently capture the construct.
