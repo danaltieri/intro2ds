@@ -9,7 +9,7 @@ toc: true
 
 # Week 1 – Introduction to Data Science
 
-> **TL;DR**: Data science creates value when it aligns with decisions. Learn to define the problem, measure well, summarize variation (not just averages), and build predictions with explicit assumptions. Failures (e.g., Zillow) often reflect **assumption breaks** and measurement gaps—not just bad models.
+> **TL;DR**: Data science creates value when it aligns with decisions. Learn to define the problem, measure well, summarize variation (not just averages), and build predictions with explicit assumptions. Failures (e.g., Blockbuster) often reflect **assumption breaks** and measurement gaps—not just bad models.
 
 **See also:** Week 2 · Reliability vs. Validity
 
