@@ -1,196 +1,70 @@
-# Week 5: Survey Data and Analysis
+---
+title: "Week 5 – Survey Data and Analysis"
+description: "Study notes on survey design, sampling, weights, GSS, question types, data structure, and crosstab analysis."
+authors: ["Daniel B. Altieri"]
+date: "2026-01-27"
+tags: ["survey","GSS","weights","crosstab","question design"]
+toc: true
+---
 
-## Introduction
+# Week 5 – Survey Data and Analysis
 
-Survey research is a fundamental method for collecting data about individuals, groups, and populations. This lesson covers best practices in survey design, data collection, and analysis methods commonly used in social science and organizational research.
+> **TL;DR**: Generalize with **probability samples** and **weights**; always read the **codebook**. For crosstabs: put **IV on rows**, **DV on columns**, and use **row %** to compare groups. Separate **demographic**, **behavioral**, and **attitudinal** variables. Design questions with clarity and mutually exclusive options.
 
-## Survey Design Fundamentals
+**See also:** Week 2
 
-### What is Survey Research?
+## 1. What Is Survey Data?
+Survey data is collected by asking people questions and recording their responses. It allows systematic information gathering about behaviors, attitudes, and demographics—especially when direct observation is impractical.
 
-Survey research involves systematically gathering information from respondents through questionnaires or interviews. Surveys can be used to:
+## 2. Sampling in Survey Research
+### 2.1 Samples vs. Populations
+We survey a **sample** (subset) to draw inferences about a **population**.
 
-- Describe populations
-- Understand attitudes and opinions
-- Measure behaviors and experiences
-- Test relationships between variables
+### 2.2 Probability Sampling
+A probability sample has known selection probabilities, enabling generalization beyond respondents.
 
-### Types of Survey Questions
+### 2.3 Survey Weights
+When selection probabilities differ, **weights** adjust estimates so each respondent represents the correct number of people. Large surveys (e.g., **GSS**) rely on weights.
 
-#### Closed-Ended Questions
-- **Dichotomous**: Yes/No, True/False
-- **Multiple Choice**: Select from predefined options
-- **Rating Scales**: Likert scales (e.g., 1-5 agreement scale)
-- **Ranking**: Order items by preference or importance
+## 3. The General Social Survey (GSS)
+- Long‑running national survey of U.S. adults, with consistent methods across decades.
+- Collects education, health behaviors, social attitudes, etc.
+- **Codebooks** document variable construction, skip patterns, and response options; always consult them.
 
-#### Open-Ended Questions
-- Allow respondents to provide unrestricted responses
-- Useful for exploratory research
-- Require coding and thematic analysis
+## 4. Types of Survey Questions
+- **Open‑Ended**: nuanced but hard to quantify.
+- **Closed‑Ended / Multiple Choice**: standardized and efficient for quantitative analysis.
+- Other formats: ranking, forced‑choice, sliders—use with care.
 
-## Best Practices in Survey Design
+## 5. Categories of Survey Variables
+- **Demographic** (often IVs): stable characteristics (e.g., education, age).
+- **Behavioral**: actions within time windows (e.g., doctor visits, voting).
+- **Attitudinal**: beliefs, opinions, values; distinct from behavior.
 
-### Question Writing
+## 6. Question Design Principles
+- Keep questions concise and focused.
+- Avoid leading/loaded wording; use clear language.
+- Provide complete, mutually exclusive options.
+- Do not mix behaviors and attitudes in one question.
 
-1. **Be Clear and Specific**
-   - Avoid ambiguous wording
-   - Use simple, direct language
-   - Define technical terms
+## 7. Structure of Survey Data Files
+- Rectangular datasets: rows = respondents; columns = variables.
+- Numeric codes may label categories; do **not** treat as quantities unless appropriate.
 
-2. **Avoid Leading Questions**
-   - Don't suggest a "correct" answer
-   - Maintain neutrality
+## 8. Crosstabulation (Core Analysis Tool)
+**What**: Compare two categorical variables to reveal association.
 
-3. **Avoid Double-Barreled Questions**
-   - Ask about one thing at a time
-   - Example of what NOT to do: "Do you like the quality and price of this product?"
+**Best practice**
+- Place **independent variable on rows**; **dependent on columns**.
+- Use **row percentages** to compare groups.
 
-4. **Use Appropriate Response Scales**
-   - Ensure scales match the question type
-   - Provide balanced options
-   - Include "Not Applicable" or "Prefer Not to Answer" when appropriate
+## FAQ
 
-### Survey Structure
+**Q: When must I apply survey weights?**  
+**A:** When selection probabilities differ (most complex/national surveys). Weights restore population representativeness.
 
-- **Introduction**: Explain the purpose, time commitment, and confidentiality
-- **Warm-up Questions**: Start with easy, non-threatening questions
-- **Core Questions**: Place most important questions in the middle
-- **Demographics**: Usually placed at the end
-- **Thank You**: Express gratitude and explain next steps
+**Q: Why row percentages (not column) in crosstabs?**  
+**A:** With IV on rows, row % let you compare **groups of interest** directly on the DV distribution.
 
-## Data Collection Methods
-
-### Administration Modes
-
-- **Online Surveys**: Cost-effective, quick data collection, but may have sampling bias
-- **Paper Surveys**: Useful for populations with limited internet access
-- **Telephone Surveys**: Can reach diverse populations, but declining response rates
-- **In-Person Interviews**: Rich data, but time and resource intensive
-
-### Sampling Considerations
-
-- **Probability Sampling**: Random selection from population (enables generalization)
-- **Convenience Sampling**: Non-random selection (limited generalizability)
-- **Response Rate**: Aim for high response rates to reduce non-response bias
-
-## Analyzing Survey Data
-
-### Data Preparation
-
-1. **Data Cleaning**
-   - Check for missing data
-   - Identify outliers
-   - Validate response patterns
-
-2. **Coding Open-Ended Responses**
-   - Develop coding scheme
-   - Train coders
-   - Assess inter-rater reliability
-
-3. **Reverse Coding**
-   - Recode negatively worded items
-   - Ensure consistency in scale direction
-
-### Descriptive Analysis
-
-- **Frequency Distributions**: Count responses for categorical variables
-- **Central Tendency**: Mean, median, mode for continuous variables
-- **Variability**: Standard deviation, range, interquartile range
-- **Cross-Tabulations**: Examine relationships between categorical variables
-
-### Scale Construction
-
-When multiple items measure the same construct:
-
-1. **Assess Internal Consistency**
-   - Calculate Cronbach's alpha
-   - Target: α ≥ 0.70 for research purposes
-
-2. **Create Composite Scores**
-   - Sum or average items
-   - Weight items if appropriate
-
-3. **Validate the Scale**
-   - Check convergent validity
-   - Check discriminant validity
-
-### Inferential Analysis
-
-#### Common Approaches
-
-- **T-tests**: Compare means between groups
-- **ANOVA**: Compare means across multiple groups
-- **Chi-Square Tests**: Test associations between categorical variables
-- **Correlation**: Measure linear relationships
-- **Regression**: Predict outcomes and test relationships
-
-## Common Challenges and Solutions
-
-### Low Response Rates
-- Send reminders
-- Offer incentives
-- Keep surveys brief
-- Emphasize importance and confidentiality
-
-### Missing Data
-- Use multiple imputation when appropriate
-- Conduct sensitivity analyses
-- Report patterns of missingness
-
-### Response Bias
-- **Acquiescence Bias**: Tendency to agree with statements
-  - Solution: Include reverse-coded items
-- **Social Desirability Bias**: Responding in socially favorable ways
-  - Solution: Ensure anonymity, use indirect questioning
-
-### Survey Fatigue
-- Keep surveys as short as possible
-- Use skip logic to show only relevant questions
-- Test survey length during pilot phase
-
-## Quality Checks
-
-### Pilot Testing
-
-Before full deployment:
-- Test with small sample
-- Check for technical issues
-- Assess completion time
-- Gather feedback on clarity
-
-### Data Quality Indicators
-
-- **Attention Checks**: Include items to verify respondents are reading carefully
-- **Completion Time**: Flag very fast completions
-- **Response Patterns**: Identify straight-lining (selecting same response throughout)
-
-## Reporting Survey Results
-
-### Key Elements
-
-1. **Methods Section**
-   - Sampling approach
-   - Response rate
-   - Survey instrument description
-   - Data collection procedures
-
-2. **Results Section**
-   - Descriptive statistics
-   - Scale reliability estimates
-   - Inferential test results
-   - Effect sizes
-
-3. **Limitations**
-   - Acknowledge sampling limitations
-   - Report non-response bias if known
-   - Note any measurement issues
-
-## Conclusion
-
-Effective survey research requires careful attention to design, implementation, and analysis. By following best practices in question writing, sampling, data collection, and statistical analysis, researchers can generate reliable and valid insights about their populations of interest.
-
-## Additional Resources
-
-- American Association for Public Opinion Research (AAPOR) guidelines
-- Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). *Internet, Phone, Mail, and Mixed-Mode Surveys: The Tailored Design Method*
-- Fowler, F. J. (2013). *Survey Research Methods*
+**Q: How do I handle “Not asked / Inapplicable” vs. missing?**  
+**A:** Use **explicit codes** and exclude inapplicable cases from denominators to avoid biased percentages.
