@@ -18,6 +18,7 @@ This documentation provides comprehensive notes and materials covering key topic
 - [Week 1: Introduction to Data Science](week01-intro-to-ds.md)
 - [Week 2: Variables, Summary Statistics, and Inference](week02-variables-summary-inference.md)
 - [Week 3: MTTM](mtmm-construct-validation.md)
+- [Week 4: Measurement Quality](reliability-vs-validity.md)
 - [Week 5: Survey Data and Analysis](week05-survey-data-and-analysis.md)
 
 ### Measurement and Validation
