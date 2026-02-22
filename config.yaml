@@ -1,0 +1,105 @@
+# Site Settings
+
+title: “Introduction to Data Science”
+description: “Vanderbilt University Peabody College - Leadership and Learning in Organizations Doctoral Program”
+author: “Dan Altieri”
+institution: “Vanderbilt University - Peabody College”
+baseurl: “/intro2ds”
+url: “https://danaltieri.github.io”
+
+# Theme
+
+theme: jekyll-theme-cayman
+
+# Plugins for better SEO and discoverability
+
+plugins:
+
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+
+# Include these directories in the site build
+
+include:
+
+- modules.md
+- lecture
+- exercises
+- docs
+
+# Exclude these files from the site
+
+exclude:
+
+- .gitignore
+- .github/
+- LICENSE
+- .gitkeep-stage3
+- README.md
+
+# Markdown settings
+
+markdown: kramdown
+kramdown:
+input: GFM
+syntax_highlighter: rouge
+hard_wrap: false
+
+# Collections (optional - for advanced organization)
+
+# Uncomment if you want to use Jekyll collections for weeks
+
+# collections:
+
+# weeks:
+
+# output: true
+
+# permalink: /lecture/:name/
+
+# Default front matter for all pages
+
+defaults:
+
+- scope:
+  path: “”
+  values:
+  layout: default
+
+# Site metadata for better Copilot indexing
+
+course:
+code: “Intro2DS”
+semester: “Spring 2025”
+duration: “14 weeks”
+level: “Doctoral”
+department: “Leadership and Learning in Organizations”
+
+# Navigation (for themes that support it)
+
+header_pages:
+
+- index.md
+- Syllabus.md
+- modules.md
+- assignments.md
+- conceptmap.md
+
+# Show navigation in this order (if theme supports)
+
+navigation:
+
+- title: “Home”
+  url: /
+- title: “Syllabus”
+  url: /Syllabus
+- title: “Modules”
+  url: /modules
+- title: “Assignments”
+  url: /assignments
+- title: “Concept Map”
+  url: /conceptmap
+
+card: summary
+lang: en_US
