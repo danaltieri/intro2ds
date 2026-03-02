@@ -22,11 +22,11 @@ This page provides an overview of all 14 weekly modules in the course. Each modu
 |07    |Data Visualization                      |Gutman Ch. 9; HBR Guide Ch. 10                                  |[View Module](lecture/week-07/)|✅ Available|
 |08    |Hypothesis Testing                      |Gutman Ch. 10                                                   |[View Module](lecture/week-08/)|✅ Available|
 |09    |Mid-Course Review                       |No readings                                                     |[View Module](lecture/week-09/)|✅ Available|
-|10    |Correlation Analysis                    |Gutman Ch. 7                                                    |[View Module](lecture/week-10/)|✅ Available|
-|11    |Regression Analysis                     |Gutman Ch. 8; Ozturk 2022; Merlino 2022; Namin 2022             |[View Module](lecture/week-11/)|✅ Available|
-|12    |Advanced Analytics & AI Applications    |Gutman Ch. 12; Wolfram 2023                                     |[View Module](lecture/week-12/)|✅ Available|
-|13    |Research Communication & Ethics         |Gutman Ch. 13, 14                                               |[View Module](lecture/week-13/)|✅ Available|
-|14    |Final Presentations                     |Final Project Presentations                                     |[View Module](lecture/week-14/)|✅ Available|
+|10    |Correlation Analysis                    |Gutman Ch. 7                                                    |[View Module](lecture/week-10/)|Not Yet Available|
+|11    |Regression Analysis                     |Gutman Ch. 8; Ozturk 2022; Merlino 2022; Namin 2022             |[View Module](lecture/week-11/)|Not Yet Available|
+|12    |Advanced Analytics & AI Applications    |Gutman Ch. 12; Wolfram 2023                                     |[View Module](lecture/week-12/)|Not Yet Available|
+|13    |Research Communication & Ethics         |Gutman Ch. 13, 14                                               |[View Module](lecture/week-13/)|Not Yet Available|
+|14    |Final Presentations                     |Final Project Presentations                                     |[View Module](lecture/week-14/)|Not Yet  Available|
 
 -----
 
