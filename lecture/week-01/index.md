@@ -10,7 +10,7 @@ This is a sample index file for the Week 1 lecture folder. It is intended to mat
 
 ## Files in This Folder
 
-- `6jan2026_Live_S61_LLO8200.md` - Live session notes for Week 1
+- `live-lecture-notes.md` - Live session notes for Week 1
 - `Introduction_notes.md` - Lecture notes for Week 1
 -----
 
