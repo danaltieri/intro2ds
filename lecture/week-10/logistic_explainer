@@ -1,0 +1,229 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistic Regression Explainer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #1a1a1a; padding: 2rem; max-width: 800px; margin: 0 auto; }
+    h1 { font-size: 22px; font-weight: 500; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 14px; color: #666; margin-bottom: 1.5rem; }
+    .tabs { display: flex; gap: 4px; margin-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; }
+    .tab { padding: 8px 16px; font-size: 13px; cursor: pointer; border: none; background: transparent; color: #666; border-bottom: 2px solid transparent; margin-bottom: -1px; font-family: inherit; }
+    .tab.active { color: #1a1a1a; border-bottom-color: #185FA5; font-weight: 500; }
+    .panel { display: none; } .panel.active { display: block; }
+    .controls { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-bottom: 1.25rem; }
+    .ctrl { display: flex; flex-direction: column; gap: 5px; min-width: 160px; }
+    label { font-size: 12px; color: #666; }
+    .slider-row { display: flex; align-items: center; gap: 8px; }
+    .slider-row input[type=range] { flex: 1; accent-color: #185FA5; }
+    .val { font-size: 13px; font-weight: 500; min-width: 36px; text-align: right; }
+    select { height: 36px; border-radius: 8px; border: 0.5px solid #ccc; background: #fff; color: #1a1a1a; font-size: 14px; padding: 0 8px; font-family: inherit; }
+    .chart-wrap { position: relative; width: 100%; height: 280px; }
+    .legend { display: flex; gap: 16px; font-size: 12px; color: #666; margin-bottom: 6px; flex-wrap: wrap; }
+    .legend span { display: flex; align-items: center; gap: 5px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .sq { width: 10px; height: 10px; border-radius: 2px; }
+    .formula { background: #f5f5f3; border-radius: 8px; padding: 12px 16px; font-family: monospace; font-size: 13px; margin-bottom: 1rem; line-height: 1.8; }
+    .stat-row { display: flex; gap: 10px; margin-bottom: 1.25rem; flex-wrap: wrap; }
+    .stat { background: #f5f5f3; border-radius: 8px; padding: 10px 14px; flex: 1; min-width: 100px; }
+    .stat-label { font-size: 11px; color: #666; margin-bottom: 3px; }
+    .stat-value { font-size: 18px; font-weight: 500; }
+    .predict-area { background: #f5f5f3; border-radius: 12px; padding: 1rem 1.25rem; }
+    .pred-input { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; }
+    .pred-bar-wrap { background: #fff; border: 0.5px solid #ccc; border-radius: 8px; height: 20px; position: relative; overflow: hidden; }
+    .pred-bar { height: 100%; background: #185FA5; transition: width 0.3s; }
+    .pred-label { font-size: 13px; color: #666; display: flex; justify-content: space-between; margin-top: 4px; }
+    p.note { font-size: 12px; color: #888; margin-top: 8px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <h1>Logistic Regression</h1>
+  <p class="subtitle">An interactive explainer — sigmoid curve, data fitting, and live prediction.</p>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('sigmoid')">The sigmoid curve</button>
+    <button class="tab" onclick="switchTab('data')">Fit to data</button>
+    <button class="tab" onclick="switchTab('predict')">Make a prediction</button>
+  </div>
+
+  <!-- TAB 1 -->
+  <div class="panel active" id="tab-sigmoid">
+    <div class="formula" id="formula-display">P(y=1) = σ(z) = 1 / (1 + e^−z)&nbsp;&nbsp;&nbsp;where z = β₀ + β₁·x</div>
+    <div class="controls">
+      <div class="ctrl">
+        <label>Intercept (β₀)</label>
+        <div class="slider-row"><input type="range" id="b0" min="-5" max="5" step="0.1" value="0"><span class="val" id="b0-out">0</span></div>
+      </div>
+      <div class="ctrl">
+        <label>Slope (β₁)</label>
+        <div class="slider-row"><input type="range" id="b1" min="-5" max="5" step="0.1" value="1"><span class="val" id="b1-out">1</span></div>
+      </div>
+    </div>
+    <div class="legend">
+      <span><span class="sq" style="background:#185FA5"></span>P(y=1) — probability</span>
+      <span><span class="sq" style="background:#B4B2A9; border:1px dashed #888"></span>Decision boundary (p=0.5)</span>
+    </div>
+    <div class="chart-wrap"><canvas id="sigmoid-chart" width="1472" height="560" style="display: block; box-sizing: border-box; height: 280px; width: 736px;"></canvas></div>
+    <p class="note">The sigmoid squashes any real number into a probability between 0 and 1. Shift β₀ to move the curve left/right; change β₁ to steepen or flatten it.</p>
+  </div>
+
+  <!-- TAB 2 -->
+  <div class="panel" id="tab-data">
+    <div class="controls">
+      <div class="ctrl">
+        <label>Class separation</label>
+        <div class="slider-row"><input type="range" id="sep" min="0.5" max="3" step="0.1" value="1.5"><span class="val" id="sep-out">1.5</span></div>
+      </div>
+      <div class="ctrl">
+        <label>Sample size</label>
+        <div class="slider-row"><input type="range" id="npts" min="20" max="120" step="10" value="60"><span class="val" id="npts-out">60</span></div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="stat-label">Fitted β₀</div><div class="stat-value" id="fit-b0">0.05</div></div>
+      <div class="stat"><div class="stat-label">Fitted β₁</div><div class="stat-value" id="fit-b1">2.40</div></div>
+      <div class="stat"><div class="stat-label">Accuracy</div><div class="stat-value" id="fit-acc">93%</div></div>
+      <div class="stat"><div class="stat-label">Decision boundary</div><div class="stat-value" id="fit-boundary">x = -0.02</div></div>
+    </div>
+    <div class="legend">
+      <span><span class="dot" style="background:#185FA5"></span>Class 0</span>
+      <span><span class="dot" style="background:#D85A30"></span>Class 1</span>
+      <span><span class="sq" style="background:#185FA5;opacity:0.5"></span>Fitted sigmoid</span>
+    </div>
+    <div class="chart-wrap"><canvas id="data-chart" width="1472" height="560" style="display: block; box-sizing: border-box; height: 280px; width: 736px;"></canvas></div>
+    <p class="note">Gradient descent adjusts β₀ and β₁ to maximise the likelihood of observing the training labels. Try reducing class separation to see how the curve flattens.</p>
+  </div>
+
+  <!-- TAB 3 -->
+  <div class="panel" id="tab-predict">
+    <p style="font-size:14px;color:#666;margin-bottom:1rem;">Scenario: predict whether a student passes an exam based on hours studied.</p>
+    <div class="predict-area">
+      <div class="pred-input">
+        <div class="ctrl" style="flex:1;min-width:180px;">
+          <label>Hours studied</label>
+          <div class="slider-row"><input type="range" id="hours" min="0" max="12" step="0.5" value="5"><span class="val" id="hours-out">5</span></div>
+        </div>
+        <div class="ctrl" style="flex:1;min-width:180px;">
+          <label>Previous score (0–100)</label>
+          <div class="slider-row"><input type="range" id="score" min="0" max="100" step="1" value="60"><span class="val" id="score-out">60</span></div>
+        </div>
+      </div>
+      <div style="margin-bottom:6px;font-size:12px;color:#888;">z = −4.2 + 0.8·hours + 0.04·prev_score</div>
+      <div class="pred-bar-wrap" style="margin-bottom:4px;"><div id="pred-bar" class="pred-bar" style="width: 90%; background: rgb(24, 95, 165);"></div></div>
+      <div class="pred-label">
+        <span>P(fail) = <span id="p-fail">10%</span></span>
+        <span id="pred-verdict" style="font-weight: 500; color: rgb(24, 95, 165);">→ Predict: PASS</span>
+        <span>P(pass) = <span id="p-pass">90%</span></span>
+      </div>
+      <div style="margin-top:1rem;font-family:monospace;font-size:12px;color:#888;background:#fff;border-radius:8px;padding:10px 12px;line-height:1.9;" id="pred-formula">z = −4.2 + 0.8×5 + 0.04×60 = 2.200<br>P(pass) = σ(2.200) = 0.900</div>
+    </div>
+    <div class="chart-wrap" style="height:220px;margin-top:1rem;"><canvas id="pred-chart" width="1472" height="440" style="display: block; box-sizing: border-box; height: 220px; width: 736px;"></canvas></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script>
+    const sigmoid = z => 1 / (1 + Math.exp(-z));
+    let sigChart, dataChart, predChart;
+
+    function switchTab(name) {
+      const names = ['sigmoid','data','predict'];
+      document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', names[i] === name));
+      document.querySelectorAll('.panel').forEach((p,i) => p.classList.toggle('active', names[i] === name));
+      if (name === 'data' && !dataChart) initDataChart();
+      if (name === 'predict' && !predChart) initPredChart();
+    }
+
+    // TAB 1
+    function buildSigmoidData(b0, b1) {
+      const xs = [], ys = [];
+      for (let x = -6; x <= 6; x += 0.2) { xs.push(+x.toFixed(2)); ys.push(+sigmoid(b0 + b1*x).toFixed(4)); }
+      return { xs, ys };
+    }
+    const sCtx = document.getElementById('sigmoid-chart').getContext('2d');
+    const sInit = buildSigmoidData(0, 1);
+    sigChart = new Chart(sCtx, {
+      type: 'line',
+      data: { labels: sInit.xs, datasets: [
+        { label:'P(y=1)', data: sInit.ys, borderColor:'#185FA5', backgroundColor:'rgba(24,95,165,0.08)', fill:true, tension:0.4, pointRadius:0, borderWidth:2 },
+        { label:'p=0.5', data: sInit.xs.map(()=>0.5), borderColor:'#B4B2A9', borderDash:[4,3], pointRadius:0, borderWidth:1.5, fill:false }
+      ]},
+      options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false,callbacks:{label:c=>' p = '+c.parsed.y.toFixed(3)}}},
+        scales:{ x:{ticks:{color:'#888',font:{size:11}},grid:{color:'rgba(136,135,128,0.12)'},title:{display:true,text:'z (linear combination)',color:'#888',font:{size:11}}}, y:{min:0,max:1,ticks:{color:'#888',font:{size:11}},grid:{color:'rgba(136,135,128,0.12)'},title:{display:true,text:'Probability',color:'#888',font:{size:11}}} } }
+    });
+    function updateSigmoid() {
+      const b0 = +document.getElementById('b0').value, b1 = +document.getElementById('b1').value;
+      document.getElementById('b0-out').textContent = b0.toFixed(1);
+      document.getElementById('b1-out').textContent = b1.toFixed(1);
+      const d = buildSigmoidData(b0, b1);
+      sigChart.data.labels = d.xs; sigChart.data.datasets[0].data = d.ys; sigChart.update();
+    }
+    document.getElementById('b0').addEventListener('input', updateSigmoid);
+    document.getElementById('b1').addEventListener('input', updateSigmoid);
+
+    // TAB 2
+    function randn() { let u=0,v=0; while(!u)u=Math.random(); while(!v)v=Math.random(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
+    function generateData(n, sep) { const pts=[]; for(let i=0;i<n;i++){const cls=i<n/2?0:1; pts.push({x:+(randn()+(cls===0?-sep/2:sep/2)*2).toFixed(3),y:cls});} return pts; }
+    function fitLogistic(pts,iters=300,lr=0.1){let b0=0,b1=0;for(let i=0;i<iters;i++){let db0=0,db1=0;for(const p of pts){const err=sigmoid(b0+b1*p.x)-p.y;db0+=err;db1+=err*p.x;}b0-=lr*db0/pts.length;b1-=lr*db1/pts.length;}return{b0,b1};}
+
+    function initDataChart() {
+      const dCtx = document.getElementById('data-chart').getContext('2d');
+      dataChart = new Chart(dCtx, { type:'scatter', data:{datasets:[]}, options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{ticks:{color:'#888',font:{size:11}},grid:{color:'rgba(136,135,128,0.12)'},title:{display:true,text:'Feature x',color:'#888',font:{size:11}}}, y:{min:-0.1,max:1.1,ticks:{color:'#888',font:{size:11},callback:v=>v===0?'0 (class 0)':v===1?'1 (class 1)':''},grid:{color:'rgba(136,135,128,0.12)'}} } } });
+      updateDataChart();
+      document.getElementById('sep').addEventListener('input', updateDataChart);
+      document.getElementById('npts').addEventListener('input', updateDataChart);
+    }
+    function updateDataChart() {
+      const sep=+document.getElementById('sep').value, n=+document.getElementById('npts').value;
+      document.getElementById('sep-out').textContent = sep.toFixed(1);
+      document.getElementById('npts-out').textContent = n;
+      const pts = generateData(n, sep);
+      const {b0,b1} = fitLogistic(pts);
+      const xmin=Math.min(...pts.map(p=>p.x))-0.5, xmax=Math.max(...pts.map(p=>p.x))+0.5;
+      const xs=[], sigVals=[];
+      for(let x=xmin;x<=xmax;x+=(xmax-xmin)/80){xs.push(+x.toFixed(3));sigVals.push(+sigmoid(b0+b1*x).toFixed(4));}
+      document.getElementById('fit-b0').textContent = b0.toFixed(2);
+      document.getElementById('fit-b1').textContent = b1.toFixed(2);
+      document.getElementById('fit-acc').textContent = Math.round(pts.filter(p=>(sigmoid(b0+b1*p.x)>=0.5?1:0)===p.y).length/pts.length*100)+'%';
+      document.getElementById('fit-boundary').textContent = b1!==0?'x = '+(-b0/b1).toFixed(2):'—';
+      dataChart.data.datasets = [
+        {label:'0',data:pts.filter(p=>p.y===0).map(p=>({x:p.x,y:0})),backgroundColor:'rgba(24,95,165,0.7)',pointRadius:5,showLine:false},
+        {label:'1',data:pts.filter(p=>p.y===1).map(p=>({x:p.x,y:1})),backgroundColor:'rgba(216,90,48,0.7)',pointRadius:5,showLine:false},
+        {label:'sigmoid',data:xs.map((x,i)=>({x,y:sigVals[i]})),type:'line',borderColor:'#185FA5',backgroundColor:'rgba(24,95,165,0.08)',fill:true,tension:0.4,pointRadius:0,borderWidth:2,showLine:true}
+      ];
+      dataChart.update();
+    }
+
+    // TAB 3
+    function initPredChart() {
+      const pCtx = document.getElementById('pred-chart').getContext('2d');
+      const hrs = Array.from({length:25},(_,i)=>i*0.5);
+      predChart = new Chart(pCtx, { type:'line', data:{ labels:hrs, datasets:[
+        {label:'Prev score 80',data:hrs.map(h=>sigmoid(-4.2+0.8*h+0.04*80)),borderColor:'#1D9E75',pointRadius:0,borderWidth:1.5,fill:false,tension:0.3},
+        {label:'Prev score 60',data:hrs.map(h=>sigmoid(-4.2+0.8*h+0.04*60)),borderColor:'#185FA5',pointRadius:0,borderWidth:2,fill:false,tension:0.3},
+        {label:'Prev score 40',data:hrs.map(h=>sigmoid(-4.2+0.8*h+0.04*40)),borderColor:'#B4B2A9',pointRadius:0,borderWidth:1.5,fill:false,tension:0.3},
+        {label:'threshold',data:hrs.map(()=>0.5),borderColor:'#D85A30',borderDash:[4,3],pointRadius:0,borderWidth:1,fill:false},
+        {label:'you',data:[],backgroundColor:'#185FA5',pointRadius:8,showLine:false}
+      ]}, options:{ responsive:true,maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{ticks:{color:'#888',font:{size:11}},grid:{color:'rgba(136,135,128,0.12)'},title:{display:true,text:'Hours studied',color:'#888',font:{size:11}}}, y:{min:0,max:1,ticks:{color:'#888',font:{size:11}},grid:{color:'rgba(136,135,128,0.12)'},title:{display:true,text:'P(pass)',color:'#888',font:{size:11}}} } } });
+      updatePred();
+      document.getElementById('hours').addEventListener('input', updatePred);
+      document.getElementById('score').addEventListener('input', updatePred);
+    }
+    function updatePred() {
+      const h=+document.getElementById('hours').value, s=+document.getElementById('score').value;
+      document.getElementById('hours-out').textContent = h;
+      document.getElementById('score-out').textContent = s;
+      const z=-4.2+0.8*h+0.04*s, p=sigmoid(z);
+      const pPass=Math.round(p*100), pFail=100-pPass;
+      document.getElementById('pred-bar').style.width = pPass+'%';
+      document.getElementById('pred-bar').style.background = p>=0.5?'#185FA5':'#D85A30';
+      document.getElementById('p-pass').textContent = pPass+'%';
+      document.getElementById('p-fail').textContent = pFail+'%';
+      document.getElementById('pred-verdict').textContent = p>=0.5?'→ Predict: PASS':'→ Predict: FAIL';
+      document.getElementById('pred-verdict').style.color = p>=0.5?'#185FA5':'#D85A30';
+      document.getElementById('pred-formula').innerHTML = `z = −4.2 + 0.8×${h} + 0.04×${s} = ${z.toFixed(3)}<br>P(pass) = σ(${z.toFixed(3)}) = ${p.toFixed(3)}`;
+      if(predChart){predChart.data.datasets[4].data=[{x:h,y:p}];predChart.update();}
+    }
+  </script>
+
+
+</body><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script></html>
